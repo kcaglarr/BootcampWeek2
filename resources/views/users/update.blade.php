@@ -2,14 +2,14 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 
-<form action="/kaydet" method="post">
+<form action="/guncelle" method="post">
     <div class="form-group">
         <label for="exampleName">Name</label>
-        <input type="text" name="name" class="form-control" id="exampleName">
+        <input type="text" name="name" value="Kerim Çağlar" class="form-control" id="exampleName">
     </div>
     <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <input type="email" name="email" value="kerim.caglarr@gmail.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     <div class="form-group">

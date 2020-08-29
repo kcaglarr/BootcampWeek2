@@ -20,5 +20,8 @@ Route::get('/', function () {
 
 //%98 bu tarz yapacağız
 Route::get('/merhaba', 'HomeController@merhaba');
+Route::get('/kisiler', 'HomeController@indexView');
 Route::get('/kayit', 'HomeController@createView');
 Route::post('/kaydet', 'HomeController@create');
+Route::get('/sil/{id}', 'HomeController@delete');
+Route::get('/guncelle', 'HomeController@updateView');
