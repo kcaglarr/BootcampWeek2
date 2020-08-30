@@ -18,6 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/admin', 'AdminController@index');
+
 //%98 bu tarz yapacağız
 Route::get('/merhaba', 'HomeController@merhaba');
 Route::get('/kisiler', 'HomeController@indexView');
