@@ -47,9 +47,22 @@ class HomeController extends Controller
 
     }
 
-    public function updateView(Request $request)
+    public function updateView($id)
     {
-        return view('users.update');
+        $user = User::where('id',$id)->get();
+        $user = $user->first();
+
+        return view('users.update',compact('user'));
+    }
+
+    public function update(Request $request,$id)
+    {
+        User::where('id',$id)->update([
+           'name' => $request->get('name'),
+           'email' => $request->get('email'),
+           'updated_at' => Carbon::now()
+        ]);
+        return 'Başarıyla Güncellendi';
     }
 
     public function indexView()

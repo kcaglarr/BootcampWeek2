@@ -19,7 +19,10 @@
                 <td>{{$user->name}}</td>
                 <td>{{$user->email}}</td>
                 <td>{{$user->password}}</td>
-                <td><a href="/sil/{{$user->id}}">SİL</a> </td>
+                <td>
+                    <a href="/sil/{{$user->id}}">SİL</a>
+                    <a href="/guncelle/{{$user->id}}">GÜNCELLE</a>
+                </td>
             </tr>
 
         @endforeach
