@@ -22,8 +22,8 @@
                             <td>{{$user->updated_at}}</td>
                             <td>{{$user->name}}</td>
                             <td class="text-right">{{$user->email}}</td>
-                            <td class="text-right">SİL</td>
-                            <td class="text-right">GÜNCELLE</td>
+                            <td class="text-right"><a href="">SİL</a> </td>
+                            <td class="text-right"><a href="/guncelle/{{$user->id}}">GÜNCELLE</a> </td>
                         </tr>
                     @endforeach
                     </tbody>

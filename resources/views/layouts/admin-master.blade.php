@@ -13,26 +13,26 @@
     <title>Dashboard 2</title>
 
     <!-- Fontfaces CSS-->
-    <link href="css/font-face.css" rel="stylesheet" media="all">
-    <link href="font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <link href="font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
-    <link href="mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="{{asset('css/font-face.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('font-awesome-4.7/css/font-awesome.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('font-awesome-5/css/fontawesome-all.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('mdi-font/css/material-design-iconic-font.min.css')}}" rel="stylesheet" media="all">
 
     <!-- Bootstrap CSS-->
-    <link href="bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="{{asset('bootstrap-4.1/bootstrap.min.css')}}" rel="stylesheet" media="all">
 
     <!-- Vendor CSS-->
-    <link href="animsition/animsition.min.css" rel="stylesheet" media="all">
-    <link href="bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
-    <link href="wow/animate.css" rel="stylesheet" media="all">
-    <link href="css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
-    <link href="slick/slick.css" rel="stylesheet" media="all">
-    <link href="select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
-    <link href="vector-map/jqvmap.min.css" rel="stylesheet" media="all">
+    <link href="{{asset('animsition/animsition.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('wow/animate.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('css-hamburgers/hamburgers.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('slick/slick.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('select2/select2.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('perfect-scrollbar/perfect-scrollbar.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('vector-map/jqvmap.min.css')}}" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
-    <link href="css/theme.css" rel="stylesheet" media="all">
+    <link href="{{asset('css/theme.css')}}" rel="stylesheet" media="all">
 
 </head>
 
