@@ -1,7 +1,8 @@
 @extends('layouts.admin-master')
 
 @section('content')
-
+    <div class="section__content section__content--p30">
+    <div class="container-fluid">
     <div class="row">
         <div class="col-lg-9">
             <div class="table-responsive table--no-card m-b-30">
@@ -73,6 +74,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 
 @endsection
