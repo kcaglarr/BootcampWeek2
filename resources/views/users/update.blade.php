@@ -9,7 +9,7 @@
                             <strong>Normal</strong> Form
                         </div>
                         <div class="card-body card-block">
-                            <form action="/guncelle/{{$user->id}}" method="post" class="">
+                            <form action="{{route('user.update',$user->id)}}" method="post">
                                 <div class="form-group">
                                     <label for="nf-name" class=" form-control-label">Kullanıcı Adı</label>
                                     <input type="name" id="nf-name" name="name" value="{{$user->name}}" class="form-control">

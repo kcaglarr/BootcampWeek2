@@ -24,5 +24,8 @@ Route::get('/merhaba', 'HomeController@merhaba');
 Route::get('/kisiler', 'HomeController@indexView')->name('person');
 Route::post('/kaydet', 'HomeController@create');
 Route::get('/sil/{id}', 'HomeController@delete')->where(array('id' => '[0-9]+'));
-Route::post('/guncelle/{id}', 'HomeController@update')->where(array('id' => '[0-9]+'));
+Route::post('/guncelle/{id}', 'HomeController@update')->where(array('id' => '[0-9]+'))->name('user.update');
 Route::get('/guncelle/{id}','HomeController@updateView')->where(array('id' => '[0-9]+'));
+
+Route::get('/user-import','ExcelUploadController@userImportView')->name('user.upload');
+Route::post('/user-import-post','ExcelUploadController@userImport')->name('user.import');
