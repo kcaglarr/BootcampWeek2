@@ -14,6 +14,7 @@
                         <th class="text-right">email</th>
                         <th class="text-right">Delete</th>
                         <th class="text-right">Update</th>
+                        <th class="text-right">Indir</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -24,6 +25,7 @@
                             <td class="text-right">{{$user->email}}</td>
                             <td class="text-right"><a href="">SİL</a> </td>
                             <td class="text-right"><a href="/guncelle/{{$user->id}}">GÜNCELLE</a> </td>
+                            <td class="text-right"><a href="/indir">İNDİR</a></td>
                         </tr>
                     @endforeach
                     </tbody>

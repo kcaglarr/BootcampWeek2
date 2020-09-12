@@ -31,6 +31,8 @@ Route::get('/guncelle/{id}','HomeController@updateView')->where(array('id' => '[
 Route::get('/user-import','ExcelUploadController@userImportView')->name('user.upload');
 Route::post('/user-import-post','ExcelUploadController@userImport')->name('user.import');
 
-Auth::routes();
+Route::get('/indir','ExcelDownloadController@userDownload')->name('user.download');
+
+Auth::routes(); //login ve register
 
 Route::get('/home', 'HomeController@index')->name('home');
