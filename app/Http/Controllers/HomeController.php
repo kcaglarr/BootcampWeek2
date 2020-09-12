@@ -71,6 +71,10 @@ class HomeController extends Controller
         return view('users.index', compact('users'));
     }
 
+    public function index()
+    {
+        return view('home');
+    }
 
     public function delete($id)
     {

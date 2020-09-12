@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,3 +30,7 @@ Route::get('/guncelle/{id}','HomeController@updateView')->where(array('id' => '[
 
 Route::get('/user-import','ExcelUploadController@userImportView')->name('user.upload');
 Route::post('/user-import-post','ExcelUploadController@userImport')->name('user.import');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
