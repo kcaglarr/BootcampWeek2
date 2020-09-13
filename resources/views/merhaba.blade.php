@@ -16,7 +16,7 @@
 Merhaba burda view çalıştı! <br>
 
 @foreach($products as $product)
-{{ $product->user[0]->name }} - {{ $product->name }} - {{$product->price .' $'}} <br>
+    <img src="{{asset('/uploads/products/').'/'.$product->photo}}" alt="{{$product->name}}" width="200px" height="200px"/>  - {{ $product->user[0]->name }} - {{ $product->name }} - {{$product->price .' $'}} <br>
 @endforeach
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
