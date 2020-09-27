@@ -9,9 +9,9 @@
                 <table class="table table-borderless table-striped table-earning">
                     <thead>
                     <tr>
-                        <th>date</th>
+                        <th>resim</th>
                         <th>name</th>
-                        <th class="text-right">email</th>
+                        <th class="text-right">price</th>
                         <th class="text-right">Delete</th>
                         <th class="text-right">Update</th>
                         <th class="text-right">Indir</th>

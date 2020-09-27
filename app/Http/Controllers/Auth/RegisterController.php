@@ -7,6 +7,7 @@ use App\Providers\RouteServiceProvider;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
@@ -56,18 +57,23 @@ class RegisterController extends Controller
         ]);
     }
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return \App\User
-     */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        $to_name = 'Laravel Bootcamp';
+        $to_email = $data['email'];
+        $body = []; //Mail içeriğine eklenecek data varsa
+        $mailData = array('body'=>$body);
+        Mail::send('email.register-mail',$mailData, function ($message) use ($to_name, $to_email){
+            $message->to($to_email, $to_name)->subject('Aramıza Hoşgeldiniz!');
+            $message->from(env('MAIL_USERNAME'), 'Laravel Bootcamp');
+        });
+
+        return $user;
     }
 }

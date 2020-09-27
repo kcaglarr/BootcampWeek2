@@ -39,3 +39,7 @@ Route::get('/indir','ExcelDownloadController@userDownload')->name('user.download
 Auth::routes(); //login ve register
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => 'auth'], function (){
+    //Eğer giriş yapıldıktan sonra girilmesini istiyorsanız. İlgili routelar buraya gelmeli
+});
